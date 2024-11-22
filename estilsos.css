@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0ffef;
+    text-align: center;
+}
+
+header img {
+    width: auto;
+    height: 110px;
+}
+
+#candidates {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.candidate {
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid #ccc;
+    background-color: #fff;
+    width: 280px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.candidate img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#result-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#result-btn:disabled {
+    background-color: #ccc;
+}
+
+#result-modal, #click-confirm-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 100px;
+}
+
+#result-modal-content, #click-confirm-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+#result-modal-content {
+    z-index: 10;
+    position: relative;
+}
+
+#admin-password {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%; /* Aumente o tamanho para facilitar a interação */
+    margin-bottom: 20px;
+
+}
+#result-modal {
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #candidates {
+        flex-direction: column;
+    }
+}

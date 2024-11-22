@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Eleição da E.M. Melchor Del Blanco</title>
+    <link rel="stylesheet" href="estilsos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/brasao.png">
+    </header>
+    <h1>ELEIÇÃO PARA DIRETOR GERAL E.M PROFº MELCHOR DEL BLANCO MIGUEL</h1>
+    <div id="candidates">
+        <div class="candidate" data-id="1">
+            <img src="img/Adriana.jpeg" alt="Foto do Candidato 1">
+            <h2>Chapa única: Adriana de Fátima Dias</h2>
+            <p>Aperte a tecla "1" para SIM.</p>
+        </div>
+
+        <div class="candidate" data-id="2">
+            <img src="img/nao.jpg" alt="Votos Negativos">
+            <h2>Não desejo este Diretor</h2>
+            <p>Aperte a Tecla "2" para votar NÃO.</p>
+        </div>
+
+        <div class="candidate" data-id="5">
+            <img src="img/branco.jpeg" alt="">
+            <h2>VOTO EM BRANCO</h2>
+            <p>Aperte a tecla "5".</p>
+        </div>
+
+        <div class="candidate" data-id="6">
+            <img src="img/nulo.jpg" alt="">
+            <h2>VOTO NULO</h2>
+            <p>Aperte a tecla "6".</p>
+        </div>
+    </div>
+
+    <button id="result-btn" onclick="requestPassword()">Gerar Resultados</button>
+
+    <div id="result-modal">
+        <div id="result-modal-content">
+            <p>Digite a senha do administrador:</p>
+            <input type="password" id="admin-password">
+            <button onclick="checkPassword()">Enviar</button>
+        </div>
+    </div>
+
+    <div id="click-confirm-modal">
+        <div id="click-confirm-modal-content">
+            <p id="click-confirm-message"></p>
+        </div>
+    </div>
+    <script src="funcoes.js"></script>
+
+</body>
+</html>
